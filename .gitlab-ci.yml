@@ -1,0 +1,22 @@
+image: registry.gitlab.com/pages/hugo:latest
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+test:
+  script:
+  - hugo --theme=hugo-theme-air
+  except:
+  - master
+
+pages:
+  script:
+  - hugo --theme=hugo-theme-air
+  artifacts:
+    paths:
+    - public
+  only:
+  - hugo
+
+
+
