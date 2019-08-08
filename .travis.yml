@@ -14,7 +14,7 @@ install:
     - pwd
 
 script:
-    - hugo --theme=hugo-theme-air
+    - hugo
     - echo 'Hugo build done!'
 
 after_script:

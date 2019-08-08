@@ -2,3 +2,5 @@ baseURL = "https://asvip.github.io/"
 languageCode = "en-us"
 title = "ASVIP"
 
+theme = "hugo-theme-air"
+
